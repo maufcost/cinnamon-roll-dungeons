@@ -50,14 +50,7 @@ class Map extends Component {
                 </header>
 
                 <div className="battle">
-                    <section className="col-left">
-                        <div className="player-info">
-                            <h3 className="selected-character">Your character is {this.state.character}</h3>
-                            <img className="player-img" src={this.props.characterImage} alt="Selected Character" />
-                        </div>
-                    </section>
-
-                    <section className="col-right">
+                    <section>
                         <ul className="map">
                             <li>
                                 <button className="map-button" id="1" onClick={this.updateLevel}>Level 1</button>
@@ -79,6 +72,7 @@ class Map extends Component {
                         {this.state.renderLevel && (
                             <Level
                                 character={this.state.character}
+                                characterImage={this.props.characterImage}
                                 levelNumber={this.state.selectedLevel}
                                 updateRenderLevel={this.updateRenderLevel}
                             />

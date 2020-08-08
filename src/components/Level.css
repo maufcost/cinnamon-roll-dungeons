@@ -5,3 +5,36 @@
     font-size: 1.5em;
     margin-bottom: 10px;
 }
+
+#diceImage {
+    margin-top: 10px;
+    width: 100px;
+}
+
+#player-life-outer-bar {
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #c3c3c3;
+}
+
+#player-life-inner-bar {
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: green;
+}
+
+#boss-life-outer-bar {
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #c3c3c3;
+}
+
+#boss-life-inner-bar {
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: green;
+}
