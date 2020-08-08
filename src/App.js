@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react'
+import './App.css'
+import {Router} from "@reach/router"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Home from "./components/Home"
+import Map from "./components/Map"
+
+class App extends Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            chosenCharacter: null,
+            characterImage: null
+        }
+        this.updateChosenCharacter = this.updateChosenCharacter.bind(this)
+    }
+
+    updateChosenCharacter = (character, image) => {
+        this.setState({
+            chosenCharacter: character,
+            characterImage: image
+        })
+    }
+
+    render() {
+        return (
+            <div>
+                <Router>
+                    <Home
+                        path="/"
+                        updateChosenCharacter={this.updateChosenCharacter}
+                    />
+
+                    <Map
+                        path="/map"
+                        character={this.state.chosenCharacter}
+                        characterImage={this.state.characterImage}
+                    />
+                </Router>
+            </div>
+        );
+    }
 }
 
-export default App;
+export default App

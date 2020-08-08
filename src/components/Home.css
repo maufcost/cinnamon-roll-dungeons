@@ -1,0 +1,24 @@
+.player-img {
+    width: 250px;
+}
+
+.player-select-button {
+    border: none;
+    padding: 16px 32px;
+    border: 2px solid #674789;
+    background-color: #533277;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.player-select-button:hover {
+    padding: 20px 40px;
+    background-color: #341d4d;
+    color: #fff;
+    border: 5px solid #674789;
+    box-shadow: 10px 10px 0 #674789;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: 0.5s;
+}

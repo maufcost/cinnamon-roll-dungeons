@@ -1,0 +1,44 @@
+.battle {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.selected-character {
+    font-weight: bolder;
+}
+
+.map {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.arrow {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.map-button {
+    border-radius: 50%;
+    padding: 50px 40px;
+    border: 2px solid #674789;
+    background-color: #341d4d;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.map-button:hover {
+    border: 2px solid #000;
+    transition: 0.5s;
+    box-shadow: 10px 20px 0 #674789;
+    border: 5px solid #674789;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.map-button:focus {
+    outline: none;
+}

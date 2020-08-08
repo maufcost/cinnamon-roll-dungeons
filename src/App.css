@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Cabin', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    font-weight: bolder;
+    font-size: 2.5em;
+    margin-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+    list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:focus {
+    outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.character-selection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.character-selected-info {
+    margin: 20px 0;
+}
+
+.make-me-bold {
+    font-weight: bolder;
+}
+
+.make-me-purple {
+    color: #341d4d;
+}
+
+.yellow-button {
+    background-color: #f3db3b;
+    color: #000;
+    border-radius: 10px;
+    border: 2px solid #b49f11;
+    padding: 16px 100px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.yellow-button:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    box-shadow: 0 10px 0 #b49f11;
+    transition: 0.5s;
 }
